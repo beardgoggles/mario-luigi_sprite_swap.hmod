@@ -1,0 +1,5 @@
+local region="$(cat "$rootfs/etc/clover/ui")"
+
+overmount "/usr/share/ui/$region/resources/layout/asset/sprite/luigi/luigi_*.png"
+overmount "/usr/share/ui/$region/resources/layout/asset/sprite/mario/mario_*.png"
+overmount "/usr/share/ui/$region/resources/sprites/packed.png"

@@ -1,0 +1,10 @@
+local region="$(cat "$rootfs/etc/clover/ui")"
+
+copy "$transferpath/p7927_mario-luigi_sprite_swap" "$preinitpath"
+
+copy "$transferpath/luigi" "$rootfs/usr/share/ui/$region/resources/layout/asset/sprite/"
+copy "$transferpath/mario" "$rootfs/usr/share/ui/$region/resources/layout/asset/sprite/"
+
+copy "$transferpath/packed.png/$region/packed.png" "$rootfs/usr/share/ui/$region/resources/sprites/"
+
+return 1

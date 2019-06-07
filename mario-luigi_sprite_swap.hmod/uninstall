@@ -1,0 +1,6 @@
+local region="$(cat "$rootfs/etc/clover/ui")"
+
+rm -f "$preinitpath/p7927_mario-luigi_sprite_swap"
+rm -rf "$rootfs/usr/share/ui/$region/resources/layout/asset/sprite/luigi"
+rm -rf "$rootfs/usr/share/ui/$region/resources/layout/asset/sprite/mario"
+rm -rf "$rootfs/usr/share/ui/$region/resources/sprites/packed.png"
